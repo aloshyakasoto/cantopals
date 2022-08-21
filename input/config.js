@@ -115,14 +115,14 @@ const addRarityPercentForLayer = (_rarityId, _layerId, _percentages) => {
  *************************************************************/
 
 // image width in pixels
-const width = 1000;
+const width = 1001;
 // image height in pixels
-const height = 1000;
+const height = 1001;
 // description for NFT in metadata file
-const description = "This is an NFT made by the coolest generative code.";
+const description = "Generative Art by Al-Kutla";
 // base url to use in metadata file
-// the id of the nft will be added to this url, in the example e.g. https://hashlips/nft/1 for NFT with id 1
-const baseImageUri = "https://hashlips/nft";
+// the id of the nft will be added to this url, in the example e.g. https://alkutla.ae/nft/1 for NFT with id 1
+const baseImageUri = "https://alkutla.ae/nft";
 // id for edition to start from
 const startEditionFrom = 1;
 // amount of NFTs to generate in edition
@@ -142,19 +142,18 @@ let rarityWeights = [
 // for each layer, call 'addLayer' with the id and optionally the positioning and size
 // the id would be the name of the folder in your input directory, e.g. 'ball' for ./input/ball
 const layers = [
-  addLayer('ball', { x: 0, y: 0 }, { width: width, height: height }),
-  addLayer('eye color'),
-  addLayer('iris'),
-  addLayer('shine'),
-  addLayer('bottom lid'),
-  addLayer('top lid')
+  addLayer('background', { x: 0, y: 0 }, { width: width, height: height }),
+  addLayer('character'),
+  addLayer('eyes'),
+  addLayer('attire'),
+  addLayer('addon'),
 ];
 
 // provide any specific percentages that are required for a given layer and rarity level
 // all provided options are used based on their percentage values to decide which layer to select from
-addRarityPercentForLayer('super_rare', 'ball', { 'super_rare': 33, 'rare': 33, 'original': 33 });
-addRarityPercentForLayer('super_rare', 'eye color', { 'super_rare': 50, 'rare': 25, 'original': 25 });
-addRarityPercentForLayer('original', 'eye color', { 'super_rare': 50, 'rare': 25, 'original': 25 });
+//addRarityPercentForLayer('super_rare', 'background', { 'super_rare': 33, 'rare': 33, 'original': 33 });
+//addRarityPercentForLayer('super_rare', 'attire', { 'super_rare': 50, 'rare': 25, 'original': 25 });
+//addRarityPercentForLayer('original', 'addon', { 'super_rare': 50, 'rare': 25, 'original': 25 });
 
 module.exports = {
   layers,
