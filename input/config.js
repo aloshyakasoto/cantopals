@@ -151,9 +151,10 @@ const layers = [
 
 // provide any specific percentages that are required for a given layer and rarity level
 // all provided options are used based on their percentage values to decide which layer to select from
-//addRarityPercentForLayer('super_rare', 'background', { 'super_rare': 33, 'rare': 33, 'original': 33 });
-//addRarityPercentForLayer('super_rare', 'attire', { 'super_rare': 50, 'rare': 25, 'original': 25 });
-//addRarityPercentForLayer('original', 'addon', { 'super_rare': 50, 'rare': 25, 'original': 25 });
+// addRarityPercentForLayer('super_rare', 'background', { 'super_rare': 33, 'rare': 33, 'original': 33 });
+// addRarityPercentForLayer('super_rare', 'attire', { 'super_rare': 50, 'rare': 25, 'original': 25 });
+// addRarityPercentForLayer('original', 'addon', { 'super_rare': 50, 'rare': 25, 'original': 25 });
+
 
 module.exports = {
   layers,
