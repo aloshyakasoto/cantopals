@@ -1,25 +1,3 @@
-# Welcome to HashLips 👄
-
-Important: There is a new repo for this code.
-[https://github.com/HashLips/hashlips_art_engine](https://github.com/HashLips/hashlips_art_engine)
-
-All the code in these repos was created and explained by HashLips on the main YouTube channel.
-
-To find out more please visit:
-
-[📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
-
-[👄 Discord](https://discord.com/invite/qh6MWhMJDN)
-
-[💬 Telegram](https://t.me/hashlipsnft)
-
-[🐦 Twitter](https://twitter.com/hashlipsnft)
-
-[ℹ️ Website](https://hashlips.online/HashLips)
-
-# generative-art-opensource
-Create generative art by using the canvas api and node js, feel free to contribute to this repo with new ideas.
-
 # Project Setup
 - install `node.js` on your local system (https://nodejs.org/en/)
 - clone the repository to your local system `git@github.com:HashLips/generative-art-opensource.git`
@@ -56,6 +34,3 @@ Use the existing `addLayers` calls as guidance for how to add layers. This can e
 ### Allowing different rarities for certain rarity/layer combinations
 It is possible to provide a percentage at which e.g. a rare item would contain a rare vs. common part in a given layer. This can be done via the `addRarityPercentForLayer` that can be found in the `config.js` as well. 
 This allows for more fine grained control over how much randomness there should be during the generation process, and allows a combination of common and rare parts.
-
-# Development suggestions
-- Preferably use VSCode with the prettifier plugin for a consistent coding style (or equivalent js formatting rules)
